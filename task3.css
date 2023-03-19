@@ -4,8 +4,8 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-*::selection{
-  color:white;
+*::selection {
+  color: white;
   background-color: rgb(115, 107, 216);
 }
 #main {
@@ -44,15 +44,14 @@ header {
 .heading li {
   font-family: sans-serif;
 }
-.firstlink{
-    text-decoration: none;
-    color:white;
-    transition: 0.5s;
-    font-weight: 700;
-
+.firstlink {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  font-weight: 700;
 }
-.firstlink:hover{
-    color:rgb(115, 107, 216);
+.firstlink:hover {
+  color: rgb(115, 107, 216);
 }
 .main {
   background-color: rgb(115, 107, 216);
@@ -87,10 +86,10 @@ h1 {
   display: inline-block;
   margin-left: 100px;
 }
-.links{
+.links {
   display: flex;
 }
-.thirdl1{
+.thirdl1 {
   margin-left: 50px;
 }
 .headlink:hover {
@@ -181,62 +180,243 @@ button {
   margin-top: 40px;
   padding: 10px;
   transition: 0.5s all;
-  
 }
 button:hover {
   background-color: white;
   color: rgb(115, 107, 216);
 }
-input:focus{
-    border: 2px solid rgb(115, 107, 216);
+input:focus {
+  border: 2px solid rgb(115, 107, 216);
 }
-textarea:focus{
-    border: 2px solid rgb(115, 107, 216);
+textarea:focus {
+  border: 2px solid rgb(115, 107, 216);
 }
-textarea:hover{
-    border: 2px solid rgb(115, 107, 216);
+textarea:hover {
+  border: 2px solid rgb(115, 107, 216);
 }
-input:hover{
-    border: 2px solid rgb(115, 107, 216);
+input:hover {
+  border: 2px solid rgb(115, 107, 216);
 }
-footer{
-    background-color:black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    width: 100%;
-    height: 12vh;
-    
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12vh;
 }
-.sonlink{
-    text-decoration: none;
-    color:white;
-    font-size: 16px;
-    font-weight: 700;
-    transition: 0.5s;
-
+.sonlink {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.5s;
 }
-.sonul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin-left: 120px
+.sonul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 120px;
 }
-h3{
-    margin-right: 120px;
+h3 {
+  margin-right: 120px;
 }
-.sonlink:hover{
-color:rgb(115, 107, 216);
+.sonlink:hover {
+  color: rgb(115, 107, 216);
 }
-img{
+img {
   transition: all 0.5s;
 }
-img:hover{
+img:hover {
   transform: scale(1.1);
 }
-.inputs{
+.inputs {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  header {
+    width: 100vw;
+    height: 10vh;
+    gap: 0px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    gap: 5vw;
+    padding: 0px 20px;
+  }
+  .heading ul {
+    width: 400px;
+  }
+  .name {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    width: 100px;
+  }
+  .heading {
+    gap: 0px;
+    font-size: 15px;
+    gap: 5px;
+  }
+  .heading li:nth-child(1) {
+    display: none;
+  }
+  .heading li:nth-child(2) {
+    width: 20%;
+    margin-right: 10px;
+  }
+  .heading li:nth-child(3) {
+    width: 35%;
+    margin-right: 10px;
+  }
+  .heading li:nth-child(4) {
+    width: 20%;
+  }
+  .main {
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+  .main h1 {
+    width: 100%;
+    height: 150px;
+    margin-top: 130px;
+    margin-left: 0px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+  }
+
+  .links {
+    width: 100%;
+    display: block;
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .thirdl {
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .thirdl1 {
+    width: 100vw;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .headlink {
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+  #main {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #main h2 {
+    width: 100vw;
+    text-align: center;
+  }
+  #main .firstP {
+    width: 100vw;
+    padding: 10px;
+  }
+  #main .photos1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #second {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  #second .content2 {
+    width: 100vw;
+    font-size: 20px;
+    text-align: center;
+  }
+  #second .secondP {
+    width: 100vw;
+    padding: 10px;
+  }
+  .secondphotos img{
+    width: 100vw;
+    height: 300px;
+  }
+  #last{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #last h2{
+    width: 100vw;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  #last p{
+    width: 100vw;
+    text-align: center;
+    padding: 10px;
+  }
+  #input{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .form{
+    width: 100vw;
+  }
+  .inputs{
+    width: 100vw;
+    justify-content: flex-start;
+    gap: 40%;
+  }
+  .nameinput{
+    width: 30%;
+  }
+  textarea{
+    padding: 0;
+    margin: 10px;
+    width: 90vw;
+    height: 20vh;
+  }
+  .lastB{
+    width: 100vw;
+    margin-bottom: 150px;
+  }
+  .photos1 span img{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .photos1{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+  }
 }
