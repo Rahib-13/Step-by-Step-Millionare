@@ -419,4 +419,36 @@ img:hover {
     box-sizing: border-box;
     width: 100vw;
   }
+  footer{
+    width: 100vw;
+    display: block;
+
+  }
+  footer .sonul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .sonlink{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+
+  }
+  footer h3{
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+  }
+  footer .sonul li{ 
+    width: 100px;
+    display: flex;
+  }
 }
